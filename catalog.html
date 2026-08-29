@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>异常档案目录 · HGEF 基金会</title>
+  <link rel="icon" href="assets/hgef-logo.jpg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="catalog">
+  <div class="wrap">
+    <aside id="app-rail"></aside>
+    <main class="main" id="app-main">
+      <div class="content">
+
+        <header class="dochead reveal">
+          <div class="eyebrow">异常档案 · 全目录</div>
+          <h1>异常档案目录</h1>
+          <div class="stamp gold">按编号</div>
+          <div class="meta-grid">
+            <div class="mi"><b>归档范围</b><span>全部已编号异常</span></div>
+            <div class="mi"><b>访问方式</b><span class="c">择一查阅 · 仅限知情范围</span></div>
+            <div class="mi"><b>登记基准</b><span class="c">HGEF-PRO-001</span></div>
+            <div class="mi"><b>状态</b><span>持续录入</span></div>
+          </div>
+        </header>
+
+        <div class="catbar reveal">
+          <span class="label">检索</span>
+          <input id="cat-q" type="search" autocomplete="off" placeholder="输入编号 / 名称 / 关键词 …">
+          <span class="count" id="cat-count"></span>
+        </div>
+
+        <div class="catlist reveal" id="cat-list"></div>
+        <div class="cat-none" id="cat-none" style="display:none">未检索到匹配项。请核对编号或关键词。</div>
+
+        <div class="note reveal" style="margin-top:34px">
+          <p style="margin:0"><b>悬空席位：</b>以下编号暂无归档，登记后将于本目录自动出现。<span class="c">HGEF-ARC-002 — HGEF-ARC-040 · HGEF-ARC-043 — …</span></p>
+        </div>
+
+      </div>
+    </main>
+  </div>
+  <script src="assets/archive.js" defer></script>
+  <script src="assets/catalog.js" defer></script>
+  <script src="assets/common.js" defer></script>
+</body>
+</html>
