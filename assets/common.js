@@ -6,15 +6,15 @@
 
   var NAV = [
     {code:"01", key:"home",       label:"门厅",   href:"index.html"},
-    {code:"02", key:"worldview",  label:"圣典",   href:"worldview.html"},
-    {code:"03", key:"manual",     label:"规程",   href:"manual.html"},
-    {code:"04", key:"operations", label:"行动",   href:"operations.html"},
-    {code:"05", key:"object",     label:"事件",   href:"object.html"},
-    {code:"06", key:"story",      label:"故事",   href:"story.html"}
+    {code:"02", key:"catalog",    label:"目录",   href:"catalog.html"},
+    {code:"03", key:"worldview",  label:"圣典",   href:"worldview.html"},
+    {code:"04", key:"manual",     label:"规程",   href:"manual.html"},
+    {code:"05", key:"operations", label:"行动",   href:"operations.html"}
   ];
-  var TITLES = {home:"门厅", worldview:"圣典 · 辉光信仰", manual:"规程 · HGEF-PRO-001",
-                operations:"行动台账 · HGEF-PRO-002", object:"事件档案 · HGEF-ARC-001",
-                story:"故事档案 · HGEF-ARC-001-T"};
+  var TITLES = {home:"门厅", catalog:"异常档案目录", worldview:"圣典 · 辉光信仰",
+                manual:"规程 · HGEF-PRO-001", operations:"行动台账 · HGEF-PRO-002",
+                object:"事件档案 · HGEF-ARC-001", story:"故事档案 · HGEF-ARC-001-T",
+                arc042:"事件档案 · HGEF-ARC-042"};
 
   /* ---- brand ---- */
   var brand =
