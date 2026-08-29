@@ -254,6 +254,30 @@ a:hover{color:var(--ink-strong);border-bottom-color:var(--glow)}
 .indexlist .cls{font-family:var(--mono);font-size:11px;color:var(--ink-mute);letter-spacing:.14em;white-space:nowrap}
 .indexlist .cls.warn{color:var(--alert)}
 
+/* ---------- Catalog (anomaly directory) ---------- */
+.catbar{display:flex;align-items:center;gap:16px;border:1px solid var(--line);background:#0d100f;padding:12px 18px;margin:0 0 30px}
+.catbar .label{font-family:var(--mono);font-size:11px;letter-spacing:.28em;color:var(--ink-mute);text-transform:uppercase;white-space:nowrap}
+.catbar input{flex:1;background:transparent;border:0;color:var(--ink-strong);font-family:var(--sans);font-size:15px;letter-spacing:.03em;min-width:0}
+.catbar input::placeholder{color:var(--ink-mute)}
+.catbar input:focus{outline:none}
+.catbar input::-webkit-search-cancel-button{filter:invert(.6)}
+.catbar .count{font-family:var(--mono);font-size:12px;color:var(--glow);letter-spacing:.1em;white-space:nowrap}
+
+.catlist{border:1px solid var(--line);background:#0c0f0e}
+.catrow{display:flex;gap:22px;align-items:center;padding:20px 24px;border-bottom:1px solid var(--line);color:var(--ink);border-bottom:0}
+.catrow:last-child{border-bottom:0}
+.catrow:hover{background:rgba(255,255,255,.02);color:var(--ink-strong)}
+.catrow:hover .go{color:var(--glow)}
+.catrow .thumb{width:86px;height:64px;object-fit:cover;flex:none;border:1px solid var(--line-strong);filter:grayscale(.35) contrast(1.04) brightness(.92)}
+.catrow .body{flex:1;min-width:0}
+.catrow .thead{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--glow);margin-bottom:5px}
+.catrow .thead .kind{color:var(--ink-mute);letter-spacing:.2em;text-transform:uppercase}
+.catrow .name{font-size:19px;color:var(--ink-strong);margin:0 0 6px}
+.catrow .syn{font-size:13.5px;line-height:1.7;color:var(--ink-dim)}
+.catrow .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.catrow .go{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--ink-mute);white-space:nowrap;display:flex;align-items:center;gap:8px}
+.cat-none{border:1px dashed var(--line-strong);padding:26px;color:var(--ink-mute);font-size:14px;text-align:center;font-family:var(--sans)}
+
 /* ---------- Footer ---------- */
 .footer{border-top:1px solid var(--line);padding:40px 56px;max-width:1080px;margin:0 auto;font-family:var(--mono);font-size:11px;color:var(--ink-mute);letter-spacing:.1em;display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:space-between}
 .footer .f{display:flex;gap:20px;flex-wrap:wrap}
@@ -299,6 +323,9 @@ a:hover{color:var(--ink-strong);border-bottom-color:var(--glow)}
   .topbar .meta .n,.topbar .meta .clr{display:none}
   .dochead{padding:26px 22px}
   .stamp{right:22px;top:22px;font-size:11px}
+  .catrow{flex-wrap:wrap;gap:12px}
+  .catrow .go{display:none}
+  .catbar{padding:12px 14px;gap:12px}
 }
 @media (max-width:620px){
   body{font-size:15px}
