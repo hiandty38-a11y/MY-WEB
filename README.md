@@ -21,16 +21,20 @@ http://localhost:4310/site/
 | 路径 | 内容 | 对应设定文件 |
 | --- | --- | --- |
 | `index.html` | 门厅 · 档案目录与重点档案 | — |
+| `catalog.html` | 异常档案目录 · 全部已编号异常 | `assets/archive.js` |
 | `worldview.html` | 圣典 · 辉光信仰与创世经 | `世界观设定.md` |
 | `manual.html` | 规程 · HGEF-PRO-001 | `HGEF基金会规程.md` |
 | `operations.html` | 行动台账 · HGEF-PRO-002 | `HGEF异常处理记录.md` |
 | `object.html` | 事件档案 · HGEF-ARC-001 | `HGEF异常处理记录.md` |
+| `arc042.html` | 事件档案 · HGEF-ARC-042 | `assets/archive.js` |
 | `story.html` | 故事档案 · 兰陵花不再开放 | `兰陵花不再开放.md` |
 
 ## 结构
 
 - `assets/style.css` — 全部视觉样式（档案风、密级章、遮蔽符、响应式）
 - `assets/common.js` — 共享导航/页脚/状态栏注入、访问门禁、滚动显现、对象页接触闸门
+- `assets/archive.js` — 异常档案登记表：目录页据此渲染；新增异常在此加一条记录 + 新建对应档案 HTML 即可
+- `assets/catalog.js` — 渲染异常档案目录与检索
 - `assets/hgef-logo.jpg` — HGEF FOUNDATION 圆形徽记
 - `images/hgef-arc-001/` — 本站使用的物证图档（已复制到此，自包含）
 - `serve.mjs` — 轻量静态服务器
